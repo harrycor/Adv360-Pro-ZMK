@@ -109,7 +109,5 @@
             display-name = "Yellow";
             status = "reserved";
         };
-
-        layer_8 { display-name = "Red"; };
     };
 };
