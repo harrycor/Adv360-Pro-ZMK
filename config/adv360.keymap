@@ -37,18 +37,17 @@
             label = "BS_ASC_FUNC";
         };
 
-        mse_lft_clk_shft_rt_clk: mse_lft_clk_shft_rt_clk {
+        shft_lclk: shft_lclk {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk LSHIFT &mkp LCLK>;
-            label = "MSE_LFT_CLK_SHFT_RT_CLK";
-        };
+            bindings =
+                <&macro_press>,
+                <&kp LSHIFT &mkp LCLK>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LSHIFT &mkp LCLK>;
 
-        mse_clk_mse_shft_clk: mse_clk_mse_shft_clk {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &mkp LCLK>;
-            label = "MSE_CLK_MSE_SHFT_CLK";
+            label = "SHFT_LCLK";
         };
     };
 
@@ -91,11 +90,11 @@
         mse_fn {
             display-name = "3";
             bindings = <
-&kp F1          &kp F2        &kp LG(R)         &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &mse_lft_clk_shft_rt_clk  &tog 1                                                                                     &mo 4              &kp F7  &kp F8    &kp F9    &kp F10    &kp F11       &kp F12
-&kp TAB         &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(LA(LG(S)))         &mse_clk_mse_shft_clk                                                                      &kp C_VOLUME_UP    &trans  &trans    &trans    &trans     &trans        &trans
-&kp ESC         &kp LG(A)     &kp LG(S)         &mkp RCLK           &mkp LCLK      &kp LA(LS(F))             &kp LA(DELETE)                   &kp ENTER         &kp SPACE               &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans    &trans    &trans     &trans        &trans
-&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)         &kp LG(C)           &kp LG(V)      &kp LG(SLASH)                                                                &kp LA(DEL)             &trans                             &trans  &trans    &trans    &trans     &trans        &trans
-&to 0           &kp LG(D)     &kp LEFT_ARROW    &kp RIGHT           &kp LG(GRAVE)                            &mt LS(LG(BACKSPACE)) BACKSPACE  &kp LEFT_COMMAND  &hm LEFT_ALT LG(Z)      &trans  &trans  &trans                     &kp LEFT  &kp DOWN  &kp RIGHT  &kp UP_ARROW  &trans
+&kp F1          &kp F2        &kp LG(R)         &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &trans             &tog 1                                                                                     &mo 4              &kp F7  &kp F8    &kp F9    &kp F10    &kp F11       &kp F12
+&kp TAB         &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(LA(LG(S)))  &kp LG(SLASH)                                                                              &kp C_VOLUME_UP    &trans  &trans    &trans    &trans     &trans        &trans
+&kp ESC         &kp LG(A)     &kp LG(S)         &mkp RCLK           &mkp LCLK      &shft_lclk         &kp LA(DELETE)                   &kp ENTER         &kp SPACE               &trans  &trans  &kp C_VOLUME_DOWN  &trans  &trans    &trans    &trans     &trans        &trans
+&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)         &kp LG(C)           &kp LG(V)      &kp LG(LA(F))                                                         &kp LA(DEL)             &trans                             &trans  &trans    &trans    &trans     &trans        &trans
+&to 0           &kp LG(D)     &kp LEFT_ARROW    &kp RIGHT           &kp LG(GRAVE)                     &mt LS(LG(BACKSPACE)) BACKSPACE  &kp LEFT_COMMAND  &hm LEFT_ALT LG(Z)      &trans  &trans  &trans                     &kp LEFT  &kp DOWN  &kp RIGHT  &kp UP_ARROW  &trans
             >;
         };
 
