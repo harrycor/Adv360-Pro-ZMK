@@ -90,7 +90,7 @@
 &trans  &kp GRAVE  &kp LEFT_BRACE  &kp LC(RG(E))  &kp LEFT_BRACKET  &trans  &none                                               &kp C_VOLUME_UP    &trans         &bs_func        &bs_asc_func          &trans                 &vs_pin_tab           &trans
 &trans  &trans     &kp LC(RG(S))   &trans         &kp LS(LA(F))     &trans  &kp C_PREVIOUS  &trans  &trans      &trans  &trans  &kp C_VOLUME_DOWN  &kp DOLLAR     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET     &trans
 &trans  &trans     &trans          &kp LG(SLASH)  &trans            &trans                          &trans      &trans                             &kp AMPERSAND  &kp KP_EQUAL    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN      &kp PIPE
-&trans  &trans     &trans          &trans         &trans                    &trans          &trans  &trans      &trans  &trans  &trans                            &kp LG(LEFT)    &kp LG(LC(DOWN))      &kp LG(RIGHT)          &kp LC(LG(UP_ARROW))  &trans
+&trans  &trans     &trans          &trans         &trans                    &trans          &trans  &trans      &trans  &trans  &kp UNDERSCORE                    &kp LG(LEFT)    &kp LG(LC(DOWN))      &kp LG(RIGHT)          &kp LC(LG(UP_ARROW))  &trans
             >;
         };
 
