@@ -56,6 +56,20 @@
             bindings = <&kp LG(K) &kp LS(ENTER)>;
             label = "VS_PIN_TAB";
         };
+
+        hc_email: hc_email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp H &kp A &kp R &kp R &kp Y &kp C &kp O &kp R &kp R &kp A &kp D &kp I &kp N1 &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "HC_EMAIL";
+        };
+
+        fk_pw: fk_pw {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp A &kp K &kp E &kp P &kp A &kp S &kp S &kp W &kp O &kp R &kp D>;
+            label = "FK_PW";
+        };
     };
 
     keymap {
@@ -86,7 +100,7 @@
         fn {
             display-name = "Fn";
             bindings = <
-&kp F1  &kp F2     &kp LEFT_SHIFT  &kp F4         &kp F5            &kp F6  &tog 1                                              &mo 4              &kp F7         &kp F8          &kp F9                &kp F10                &kp F11               &kp F12
+&kp F1  &kp F2     &kp LEFT_SHIFT  &kp F4         &hc_email         &fk_pw  &tog 1                                              &mo 4              &kp F7         &kp F8          &kp F9                &kp F10                &kp F11               &kp F12
 &trans  &kp GRAVE  &kp LEFT_BRACE  &kp LC(RG(E))  &kp LEFT_BRACKET  &trans  &none                                               &kp C_VOLUME_UP    &trans         &bs_func        &bs_asc_func          &trans                 &vs_pin_tab           &trans
 &trans  &trans     &kp LC(RG(S))   &trans         &kp LS(LA(F))     &trans  &kp C_PREVIOUS  &trans  &trans      &trans  &trans  &kp C_VOLUME_DOWN  &kp DOLLAR     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET     &trans
 &trans  &trans     &trans          &kp LG(SLASH)  &trans            &trans                          &trans      &trans                             &kp AMPERSAND  &kp KP_EQUAL    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN      &kp PIPE
