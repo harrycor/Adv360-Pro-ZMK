@@ -70,6 +70,17 @@
             bindings = <&kp F &kp A &kp K &kp E &kp P &kp A &kp S &kp S &kp W &kp O &kp R &kp D>;
             label = "FK_PW";
         };
+
+        hyper: hyper {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp LEFT_CONTROL &kp LEFT_ALT &kp LEFT_GUI>,
+                <&macro_pause_for_release>;
+
+            label = "HYPER";
+        };
     };
 
     keymap {
@@ -130,6 +141,17 @@
             >;
         };
 
+        HYPERS_2 {
+            display-name = "hp2";
+            bindings = <
+&kp CAPSLOCK  &kp N1            &hyper        &hyper            &kp N4     &kp N5  &kp C_NEXT                                                                                  &mo 4              &kp N6  &kp N7    &hyper     &hyper     &kp N0    &kp BACKSLASH
+&kp TAB       &kp Q             &kp W         &kp E             &kp R      &kp T   &kp C_PLAY_PAUSE                                                                            &kp LEFT_BRACKET   &kp Y   &kp U     &kp I      &kp O      &kp P     &kp EQUAL
+&kp ESC       &kp A             &kp S         &kp D             &kp F      &kp G   &mo 1             &kp ENTER         &kp LS(LA(F))         &mo 2              &kp BACKSPACE  &kp RIGHT_BRACKET  &kp H   &kp J     &kp K      &kp L      &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT     &kp Z             &kp X         &kp C             &kp V      &kp B                                       &kp LEFT_ALT          &to 3                                                &kp N   &kp M     &kp COMMA  &kp DOT    &kp FSLH  &kp RSHFT
+&to 3         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GRAVE          &kp BSPC          &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp RIGHT_COMMAND  &kp ENTER      &kp SPACE                  &kp LEFT  &kp DOWN   &kp RIGHT  &kp UP    &kp MINUS
+            >;
+        };
+
         HYPERS_1 {
             display-name = "Base";
             bindings = <
@@ -141,11 +163,6 @@
             >;
 
             label = "hp1";
-        };
-
-        extra1 {
-            display-name = "Red";
-            status = "reserved";
         };
 
         extra2 {
