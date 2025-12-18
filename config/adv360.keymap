@@ -99,6 +99,16 @@
             key-positions = <10 11>;
             layers = <0>;
         };
+
+        left_hyper_lower {
+            bindings = <&hyper>;
+            key-positions = <63 64>;
+        };
+
+        right_hyper_lower {
+            bindings = <&hyper>;
+            key-positions = <71 72>;
+        };
     };
 
     keymap {
