@@ -109,6 +109,16 @@
             bindings = <&hyper>;
             key-positions = <71 72>;
         };
+
+        left_fn_layer {
+            bindings = <&mo 2>;
+            key-positions = <62 63 64>;
+        };
+
+        right_fn_layer {
+            bindings = <&mo 2>;
+            key-positions = <71 72 73>;
+        };
     };
 
     keymap {
