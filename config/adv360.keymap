@@ -127,11 +127,11 @@
         default_layer {
             display-name = "Base";
             bindings = <
-&kp CAPSLOCK  &kp N1            &kp NUMBER_2  &lt 2 NUMBER_3    &kp N4     &kp N5  &kp C_NEXT                                                                                  &mo 4              &kp N6  &kp N7    &lt 2 NUMBER_8  &kp NUMBER_9  &kp N0    &kp BACKSLASH
-&kp TAB       &kp Q             &kp W         &kp E             &kp R      &kp T   &kp C_PLAY_PAUSE                                                                            &kp LEFT_BRACKET   &kp Y   &kp U     &kp I           &kp O         &kp P     &kp EQUAL
-&kp ESC       &kp A             &kp S         &kp D             &kp F      &kp G   &mo 1             &kp ENTER         &kp LS(LA(F))         &mo 2              &kp BACKSPACE  &kp RIGHT_BRACKET  &kp H   &kp J     &kp K           &kp L         &kp SEMI  &kp SINGLE_QUOTE
-&kp LSHFT     &kp Z             &kp X         &kp C             &kp V      &kp B                                       &kp LEFT_ALT          &to 3                                                &kp N   &kp M     &kp COMMA       &kp DOT       &kp FSLH  &kp RSHFT
-&to 3         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GRAVE          &kp BSPC          &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp RIGHT_COMMAND  &kp ENTER      &kp SPACE                  &kp LEFT  &kp DOWN        &kp RIGHT     &kp UP    &kp MINUS
+&lt 2 CAPSLOCK  &kp N1            &kp NUMBER_2  &lt 2 NUMBER_3    &kp N4     &kp N5  &kp C_NEXT                                                                                  &mo 4              &kp N6  &kp N7    &lt 2 NUMBER_8  &kp NUMBER_9  &kp N0    &kp BACKSLASH
+&kp TAB         &kp Q             &kp W         &kp E             &kp R      &kp T   &kp C_PLAY_PAUSE                                                                            &kp LEFT_BRACKET   &kp Y   &kp U     &kp I           &kp O         &kp P     &kp EQUAL
+&kp ESC         &kp A             &kp S         &kp D             &kp F      &kp G   &mo 1             &kp ENTER         &kp LS(LA(F))         &mo 2              &kp BACKSPACE  &kp RIGHT_BRACKET  &kp H   &kp J     &kp K           &kp L         &kp SEMI  &kp SINGLE_QUOTE
+&kp LSHFT       &kp Z             &kp X         &kp C             &kp V      &kp B                                       &kp LEFT_ALT          &to 3                                                &kp N   &kp M     &kp COMMA       &kp DOT       &kp FSLH  &kp RSHFT
+&to 3           &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp GRAVE          &kp BSPC          &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp RIGHT_COMMAND  &kp ENTER      &kp SPACE                  &kp LEFT  &kp DOWN        &kp RIGHT     &kp UP    &kp MINUS
             >;
         };
 
@@ -150,7 +150,7 @@
             display-name = "Fn";
             bindings = <
 &kp F1  &kp F2          &kp LEFT_SHIFT  &kp F4         &hc_email      &fk_pw  &tog 1                                              &mo 4              &kp F7         &kp F8          &kp F9                &kp F10                &kp F11               &kp F12
-&to 2   &kp GRAVE       &kp LEFT_BRACE  &kp LC(RG(E))  &kp LC(RG(R))  &trans  &none                                               &kp C_VOLUME_UP    &trans         &bs_func        &bs_asc_func          &trans                 &vs_pin_tab           &trans
+&trans  &kp GRAVE       &kp LEFT_BRACE  &kp LC(RG(E))  &kp LC(RG(R))  &trans  &none                                               &kp C_VOLUME_UP    &trans         &bs_func        &bs_asc_func          &trans                 &vs_pin_tab           &trans
 &to 0   &trans          &kp RG(S)       &trans         &kp LS(LA(F))  &trans  &kp C_PREVIOUS  &trans  &trans      &trans  &trans  &kp C_VOLUME_DOWN  &kp DOLLAR     &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp LEFT_BRACKET       &kp RIGHT_BRACKET     &trans
 &trans  &trans          &trans          &kp LG(SLASH)  &trans         &trans                          &trans      &trans                             &kp AMPERSAND  &kp KP_EQUAL    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp GREATER_THAN      &kp PIPE
 &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &kp UP_ARROW           &trans          &trans  &trans      &trans  &trans  &kp UNDERSCORE                    &kp LG(LEFT)    &kp LG(LC(DOWN))      &kp LG(RIGHT)          &kp LC(LG(UP_ARROW))  &trans
