@@ -175,7 +175,7 @@
 &kp F1          &kp LC(DOWN)  &kp LC(UP_ARROW)  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)  &wi_123            &tog 1                                                                                                                     &mo 4                            &wi_123            &kp RG(LEFT_ARROW)  &kp RG(RIGHT)        &kp RG(R)         &kp RG(W)           &kp F12
 &kp TAB         &kp LG(R)     &kp LG(W)         &kp LC(LEFT_ARROW)  &kp LC(RIGHT)  &kp LC(LA(LG(S)))  &kp LG(SLASH)                                                                                                              &kp RG(SLASH)                    &kp RG(RC(RA(S)))  &kp RC(LEFT_ARROW)  &kp RC(RIGHT_ARROW)  &kp RC(UP_ARROW)  &kp RC(DOWN_ARROW)  &kp TAB
 &kp ESC         &kp LG(A)     &kp LG(S)         &mkp RCLK           &mkp LCLK      &shft_lclk         &kp LS(LA(F))                    &kp ENTER         &kp SPACE                   &kp SPACE                &kp ENTER          &kp RA(RG(F))                    &shft_lclk         &mkp LCLK           &mkp RCLK            &kp RG(S)         &kp RG(A)           &kp ESC
-&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)         &kp LG(C)           &kp LG(V)      &kp BACKSPACE                                                         &trans                      &trans                                                                       &kp BACKSPACE      &kp RG(V)           &kp RG(C)            &kp RG(X)         &kp RG(Z)           &kp RSHIFT
+&kp LEFT_SHIFT  &kp LG(Z)     &kp LG(X)         &kp LG(C)           &kp LG(V)      &kp BACKSPACE                                                         &to 10                      &trans                                                                       &kp BACKSPACE      &kp RG(V)           &kp RG(C)            &kp RG(X)         &kp RG(Z)           &kp RSHIFT
 &to 0           &kp LG(D)     &kp LEFT_ARROW    &kp RIGHT           &kp LG(GRAVE)                     &mt LS(LG(BACKSPACE)) BACKSPACE  &kp LEFT_COMMAND  &hm LEFT_ALT LG(LS(Z))      &hm RIGHT_ALT RS(RG(Z))  &kp RIGHT_COMMAND  &mt LG(LS(BACKSPACE)) BACKSPACE                     &kp RG(GRAVE)       &kp LEFT             &kp RIGHT         &kp RG(D)           &to 0
             >;
         };
@@ -231,7 +231,7 @@
             status = "reserved";
         };
 
-        Layout2 {
+        default_2 {
             display-name = "Base";
             bindings = <
 &kp CAPSLOCK  &kp N1            &kp NUMBER_2  &lt 2 NUMBER_3  &kp N4     &kp N5  &kp C_NEXT                                                                                  &mo 4              &kp N6  &kp N7        &lt 2 NUMBER_8  &kp NUMBER_9       &kp N0         &kp BACKSLASH
@@ -239,6 +239,16 @@
 &kp ESC       &kp A             &kp S         &kp D           &kp F      &kp G   &mo 1             &kp ENTER         &kp LS(LA(F))         &mo 2              &kp BACKSPACE  &kp RIGHT_BRACKET  &kp H   &kp J         &kp K           &kp L              &kp SEMI       &kp SINGLE_QUOTE
 &kp LSHFT     &kp Z             &kp X         &kp C           &kp V      &kp B                                       &kp LEFT_ALT          &to 3                                                &kp N   &kp M         &kp COMMA       &kp DOT            &kp FSLH       &kp RSHFT
 &to 3         &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT        &kp RIGHT          &kp BSPC          &kp LEFT_COMMAND  &kp LEFT_CONTROL      &kp RIGHT_COMMAND  &kp ENTER      &kp SPACE                  &kp UP_ARROW  &kp DOWN        &kp RIGHT_COMMAND  &kp RIGHT_ALT  &kp MINUS
+            >;
+        };
+
+        layer_select {
+            bindings = <
+&trans  &to 0   &to 9   &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
